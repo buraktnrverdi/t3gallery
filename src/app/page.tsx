@@ -11,11 +11,10 @@ const Images = async () => {
   if (!images) return null;
 
   return (
-    <div className="flex flex-wrap gap-4 p-8">
-      {images.map((image, index) => (
+    <div className="flex items-center justify-center">
+      {images.map((image) => (
         <>
-          <div key={image.id}>{image.name}</div>
-          <div key={image.id + "-" + index} className="w-48 self-center">
+          <div key={image.id} className="w-48 self-center">
             <img src={image.url} alt="image" />
           </div>
         </>
