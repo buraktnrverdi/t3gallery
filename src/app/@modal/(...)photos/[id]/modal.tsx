@@ -19,7 +19,11 @@ export function Modal({ children }: { children: React.ReactNode }) {
   }
 
   return createPortal(
-    <dialog ref={dialogRef} className="h-64 w-64" onClick={onDismiss}>
+    <dialog
+      ref={dialogRef}
+      className="flex h-64 w-64 items-center justify-center"
+      onClick={onDismiss}
+    >
       {children}
       {/* <button onClick={onDismiss} className="close-button">
           Close
