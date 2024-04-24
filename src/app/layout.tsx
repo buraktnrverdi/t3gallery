@@ -40,9 +40,10 @@ export default function RootLayout({
           routerConfig={extractRouterConfig(ourFileRouter)}
         />
         <body className={`font-sans ${inter.variable}`}>
-          <TopNav />
-
-          {children}
+          <div className="">
+            <TopNav />
+            <main className="pt-32">{children}</main>
+          </div>
           {modal}
           <div id="modal-root" />
         </body>

@@ -11,12 +11,12 @@ const Images = async () => {
   if (!images) return null;
 
   return (
-    <div className="flex items-center justify-center">
-      {images.map((image) => (
+    <div className="grid grid-cols-5 pl-32 pt-8">
+      {[...images].map((image) => (
         <>
           <div
             key={image.id}
-            className="flex h-48 w-48 flex-col justify-center self-center"
+            className="flex h-24 w-24 flex-col justify-center self-center"
           >
             <Link href={`/photos/${image.id}`}>
               <Image

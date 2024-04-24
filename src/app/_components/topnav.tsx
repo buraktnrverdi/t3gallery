@@ -8,7 +8,7 @@ const TopNav = () => {
   const router = useRouter();
 
   return (
-    <nav className="flex w-full items-center justify-between border-b bg-gray-800 p-4 text-xl font-semibold text-white">
+    <nav className="z-55 fixed flex w-full items-center justify-between border-b bg-gray-800 p-4 text-xl font-semibold text-white">
       <div className="">T3 Gallery</div>
 
       <div className="flex space-x-4">
